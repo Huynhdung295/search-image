@@ -9,7 +9,9 @@ function Gallery() {
     superagent.get(opt.url).then((res) => {
       if (opt.successUpload) opt.successUpload(res);
     }).catch((err)=> {
-      console.log(err);
+      console.log(err)
+      alert("Keyword không phù hợp. Vui lòng nhập lại Keyword khác!")
+      ;
     });
   };
   let [photos, setPhotos] = useState([]);
