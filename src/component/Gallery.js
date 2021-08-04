@@ -19,7 +19,12 @@ function Gallery() {
     hotKey2: "cat",
     hotKey3: "love",
     hotKey4: "beautiful",
-    hotKey5: "natural"
+    hotKey5: "natural",
+    hotKey6: "iphone",
+    hotKey7: "summer",
+    hotKey8: "computer",
+    hotKey9: "covid",
+    hotKey10: "family"
   }
   let [photos, setPhotos] = useState([]);
   let [setup, setSetup] = useState("");
