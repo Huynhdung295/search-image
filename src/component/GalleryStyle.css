@@ -7,7 +7,7 @@
 body {
     margin: 2rem;
     font-weight: 500;
-    font-family: cursive;
+    font-family: monospace;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -49,7 +49,7 @@ ul, li{
     border-color: rgba(0, 0, 0, 0.281);
     padding: 5px;
     font-weight: bolder;
-    font-family: cursive;
+    font-family: monospace;
 }
 .input:focus{
     outline: none;
@@ -62,7 +62,7 @@ ul, li{
 }
 .btn-submit{
     font-weight: bolder;
-    font-family: cursive;
+    font-family: monospace;
     height: 35px;
     margin-top: 5px;
     border-radius: 15px;
@@ -94,7 +94,7 @@ ul, li{
     font-size: 15px;
     border-radius: 9px;
     font-weight: 500;
-    font-family: cursive;
+    font-family: monospace;
 }
 .hot-keyword:hover{
     background: rgba(14, 212, 247, 0.884);
