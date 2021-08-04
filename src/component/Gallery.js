@@ -14,6 +14,13 @@ function Gallery() {
       ;
     });
   };
+  const hotKey = {
+    hotKey1: "dog",
+    hotKey2: "cat",
+    hotKey3: "love",
+    hotKey4: "beautiful",
+    hotKey5: "natural"
+  }
   let [photos, setPhotos] = useState([]);
   let [setup, setSetup] = useState("");
   const setInput = useRef();
@@ -54,10 +61,8 @@ function Gallery() {
 
   return (
     <div className="box">
+      <h1>Image search gallery - Cybersoft</h1>
       <form className="form" onSubmit={searchPhotos}>
-        <label style={{marginRight: "15px"}}>
-          Search Photos on Unsplash
-        </label>
         <input
             ref={setInput}
             placeholder="Nhập vào nội dung bạn muốn tìm kiếm"
@@ -66,6 +71,19 @@ function Gallery() {
             defaultValue=""
           />
         <input onClick={handleSubmit} value="SEARCH" type="submit" className="btn-submit" />
+       <div className="group-keyword">
+         Hot search:
+       {Object.entries(hotKey).map((key)=>{
+         return(
+           <button onClick={(e)=>{
+            e.preventDefault();
+            setSetup(key[1])
+           }} className="hot-keyword" key={key[0]} >
+             {key[1]}
+           </button>
+         )
+       })}
+       </div>
       </form>
 
       <ul className="photo-grid">{renderPhotos}</ul>
