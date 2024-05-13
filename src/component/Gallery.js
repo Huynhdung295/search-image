@@ -66,7 +66,7 @@ function Gallery() {
 
   return (
     <div className="box">
-      <h1>Image search gallery - Cybersoft</h1>
+      <h1>Image search gallery - Intern</h1>
       <form className="form" onSubmit={searchPhotos}>
         <input
             ref={setInput}
